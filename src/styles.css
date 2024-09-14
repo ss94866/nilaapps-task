@@ -234,4 +234,10 @@ body {
     .md-ml-auto {
         margin-left: auto;
     }
+    .p-card .p-card-body {
+        padding: 10px;
+    }
+    .md-show {
+        display: block;
+    }
 }

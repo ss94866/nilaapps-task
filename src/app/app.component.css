@@ -11,7 +11,7 @@
 }
 
 .maincontent-container {
-    /* max-width: calc(100vw - 72px); */
+    max-width: calc(100vw - 72px);
     background-color: #fff;
     box-shadow: 0px 0px 1px 0px rgba(14, 30, 64, 0.31);
     box-shadow: 0px 1px 1px 0px rgba(14, 30, 64, 0.25);
@@ -23,6 +23,7 @@
 .header-container {
     min-height: 64px;
     padding: 0px 10px;
+    
 }
 
 .appcontent-container {
@@ -31,4 +32,11 @@
     max-height: calc(100vh - 64px);
     padding: 30px 10px;
     overflow: auto;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .maincontent-container {
+        max-width: 100vw;
+    }
 }
