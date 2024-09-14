@@ -1,0 +1,42 @@
+.course-details-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20.58px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.course-details-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    text-align: left;
+}
+
+.custom-legend {
+    display: flex;
+    justify-content: center;
+    /* Center legend */
+    margin-bottom: 10px;
+    /* Adjust the space between legend and chart */
+}
+
+.legend-item {
+    margin-right: 15px;
+    /* Spacing between legend items */
+    font-size: 14px;
+}
+
+.legend-box {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .lg-flex-wrap {
+        flex-wrap: wrap;
+    }
+}

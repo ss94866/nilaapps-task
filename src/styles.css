@@ -1,1 +1,237 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/aura-light-indigo/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueBlack.otf') format('opentype');
+    font-weight: 900;
+    /* Black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueBlackItalic.otf') format('opentype');
+    font-weight: 900;
+    /* Black Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueBold.otf') format('opentype');
+    font-weight: bold;
+    /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueBoldItalic.otf') format('opentype');
+    font-weight: bold;
+    /* Bold Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueHeavy.otf') format('opentype');
+    font-weight: 800;
+    /* Heavy */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueHeavyItalic.otf') format('opentype');
+    font-weight: 800;
+    /* Heavy Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueItalic.ttf') format('truetype');
+    font-weight: normal;
+    /* Regular */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueLight.otf') format('opentype');
+    font-weight: 300;
+    /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueLightItalic.otf') format('opentype');
+    font-weight: 300;
+    /* Light Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueMedium.otf') format('opentype');
+    font-weight: 500;
+    /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueMediumItalic.otf') format('opentype');
+    font-weight: 500;
+    /* Medium Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueRoman.otf') format('opentype');
+    font-weight: normal;
+    /* Roman */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueThin.otf') format('opentype');
+    font-weight: 100;
+    /* Thin */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueThinItalic.otf') format('opentype');
+    font-weight: 100;
+    /* Thin Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueUltraLight.otf') format('opentype');
+    font-weight: 200;
+    /* UltraLight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeueUltraLightItalic.otf') format('opentype');
+    font-weight: 200;
+    /* UltraLight Italic */
+    font-style: italic;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-self: center;
+}
+
+.evaluation-report .p-card-body {
+    padding: 6px 10px !important;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+}
+
+.programList .p-card-body {
+    padding: 0px !important;
+}
+
+.p-accordion-tab-active {
+    border-right: 5px solid #046B99 !important;
+    position: relative;
+}
+
+.p-accordion-tab-active::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 13px);
+    right: -13px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #046B99;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #046B99;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 768px) {
+    .lg-hide {
+        display: none;
+    }
+    .lg-ml-auto {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .md-hide {
+        display: none;
+    }
+    .md-ml-auto {
+        margin-left: auto;
+    }
+}

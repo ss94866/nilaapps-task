@@ -1,0 +1,41 @@
+<div class="flex-container items-center justify-center">
+    <div style="padding: 0px 16px;">
+        <img src="/assets/logo.svg" alt="logo" height="32" />
+    </div>
+    <div>
+        <p-divider layout="vertical" />
+    </div>
+
+    <div style="margin-right: 20px;" class="lg-hide">
+        <img src="/assets/home.svg" alt="logo" height="20" />
+    </div>
+    <p-dropdown [options]="cities" class="lg-hide" [(ngModel)]="selectedCity" optionLabel="name"
+        placeholder="Select a City" />
+    <div style="margin-left: auto;" class="lg-hide">
+        <p-iconField iconPosition="left">
+            <p-inputIcon styleClass="pi pi-search" />
+            <input type="text" pInputText placeholder="Search..." />
+        </p-iconField>
+    </div>
+
+    <div style="cursor: pointer; display: flex; align-items: center;" class="lg-ml-auto" (click)="menu.toggle($event)">
+        <div style="display: flex; flex-direction:column; margin: 10px;">
+            <div class="loggedin-name">{{loggedInName}}</div>
+            <div class="role">{{role}}</div>
+        </div>
+
+        <div style="margin-right: 20px;">
+            <p-avatar image="/assets/profile.svg" class="mr-2" shape="circle" />
+        </div>
+    </div>
+
+    <p-menu #menu [model]="items" styleClass="w-full md:w-15rem" [popup]="true">
+        <ng-template pTemplate="item" let-item>
+            <a pRipple class="flex align-items-center p-menuitem-link" style="gap: 1rem;">
+                <span [class]="item.icon"></span>
+                <span class="ml-2">{{ item.label }}</span>
+                <p-badge *ngIf="item.badge" class="ml-auto" [value]="item.badge" />
+            </a>
+        </ng-template>
+    </p-menu>
+</div>

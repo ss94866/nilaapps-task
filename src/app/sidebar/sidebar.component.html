@@ -1,0 +1,7 @@
+<div style="display: flex; flex-direction:column; justify-content: center; align-items: center; cursor: pointer;">
+    <img src="/assets/nav.svg" class="profile-image" alt="profile" height="35" style="margin: 20px 0px;"/>
+
+    <div *ngFor="let item of sidebarList" [ngClass]="{'highlight': item.isActive}" style="margin: 5px 0px;padding: 8px 25px;" [pTooltip]="item.name" >
+        <img [src]="item.icon" class="profile-image" [alt]="item.name" width="35" height="35" />
+    </div>
+</div>

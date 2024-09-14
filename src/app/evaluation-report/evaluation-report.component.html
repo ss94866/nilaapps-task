@@ -1,0 +1,54 @@
+<div class="card flex justify-content-center">
+    <p-card>
+        <div class="lg-flex-wrap" style="display: flex; gap: 20px;">
+            <app-course-details></app-course-details>
+            <div style="display: flex; flex-direction:column;flex: 1 1 0%; gap: 15px;">
+                <div style="display: flex; gap:10px;" class="evaluation-report lg-flex-wrap">
+                    <p-card [style]="{'background': '#D6D9DD'}">
+                        <div style="display: flex; gap: 20px; align-items:center;">
+                            <div style="font-size: 12px;font-weight: 400;line-height: 18px;text-align: left;">
+                                Total Students
+                            </div>
+                            <div
+                                style="font-size: 20px;font-weight: 700;line-height: 29.4px;letter-spacing: 0.01em;text-align: center;">
+                                {{totalStudents}}
+                            </div>
+                        </div>
+                    </p-card>
+
+                    <p-card [style]="{'background': '#D6D9DD'}">
+                        <div style="display: flex; gap: 20px; align-items:center;">
+                            <div style="font-size: 12px;font-weight: 400;line-height: 18px;text-align: left;">
+                                Course Average Mark
+                            </div>
+                            <div
+                                style="font-size: 20px; text-wrap:nowrap; font-weight: 700;line-height: 29.4px;letter-spacing: 0.01em;text-align: center;">
+                                {{courseAVGMarks}} %
+                            </div>
+                        </div>
+                    </p-card>
+                </div>
+
+                <div>
+                    <div class="title">Assesment Progress</div>
+                </div>
+
+                <div style="position: relative; flex: auto;">
+                    <p-card>
+                        <app-assessment-chart></app-assessment-chart>
+                    </p-card>
+                </div>
+
+                <div>
+                    <div class="title">Student's Attendance</div>
+                </div>
+
+                <div style="position: relative; flex: auto;">
+                    <p-card>
+                        <app-attendance-chart></app-attendance-chart>
+                    </p-card>
+                </div>
+            </div>
+        </div>
+    </p-card>
+</div>
